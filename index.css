@@ -1,10 +1,12 @@
 /*IMG = DOWNLOAD.JPG*/
-img{
+.logo img{
 	float : center ;
+	height:200px;
+	width:90%;
 	
 }
 
-.logo{
+.logo img{
 	float:left;
 }
 
@@ -34,6 +36,7 @@ h1{
   font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
+  background-color: #f1f1f1;
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
@@ -56,7 +59,12 @@ h1{
 
 /* Float the link section to the right */
 .header-right {
-  float: right;
+  float: none;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+   background-color: #f1f1f1;
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
@@ -67,7 +75,12 @@ h1{
     text-align: left;
   }
   .header-right {
-    float: none;
+   
+	position:relative;
+  top:0%;
+  left:0%;
+  transform:none;
+   
   }
 }
 
